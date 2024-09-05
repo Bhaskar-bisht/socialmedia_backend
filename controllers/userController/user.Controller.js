@@ -128,6 +128,8 @@ export const loginUser = async (req, res) => {
             .cookie("Social_Media_Token", token, {
                 httpOnly: true,
                 sameSite: "strict",
+                secure: true, // Set this to true for HTTPS
+
                 maxAge: 1 * 24 * 60 * 60 * 1000,
             })
             .json({
