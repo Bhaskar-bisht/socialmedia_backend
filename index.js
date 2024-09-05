@@ -26,7 +26,7 @@ app.use(urlencoded({ extended: true }));
 
 // This Middleware Responsible for The Request Fzorm Frontend Which Origins Comes & This Origin Access to Our server Response or Not.
 const corsOptions = {
-    origin: "https://socialmedia-application.vercel.app",
+    origin: ["https://socialmedia-application.vercel.app", "http://localhost:5173"],
     methods: "GET,PUT,PATCH,POST,DELETE",
     credentials: true,
 };
