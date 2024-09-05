@@ -26,7 +26,7 @@ app.use(urlencoded({ extended: true }));
 
 // This Middleware Responsible for The Request Fzorm Frontend Which Origins Comes & This Origin Access to Our server Response or Not.
 const corsOptions = {
-    origin: ["https://social-media-application-p1ei.onrender.com", "http://localhost:5173"],
+    origin: process.env.FRONTEND_URL,
     methods: "GET,PUT,PATCH,POST,DELETE",
     credentials: true,
 };
